@@ -9,7 +9,7 @@
 Installation is straightforward; just use your preferred dependency manager. Here's an example using NPM:
 
 ```cmd
-npm i @xcrap/impit @xcrap/core @xcrap/parser
+npm i @xcrap/impit-client @xcrap/core @xcrap/parser
 ```
 
 > You also need to install `@xcrap/parser` and `@xcrap/core` because they are listed as `peerDependencies`. This means the package requires `@xcrap/parser` and `@xcrap/core`, but it will use the versions that the user has installed in their project.
