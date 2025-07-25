@@ -1,0 +1,46 @@
+{
+  "name": "@xcrap/impit-client",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*",
+    "!/**/__tests__"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "web scraping",
+    "xcrap",
+    "http client",
+    "impit"
+  ],
+  "author": "Marcuth",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
+    "@xcrap/parser": "^0.1.11",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@xcrap/core": "*",
+    "impit": "^0.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xcrap-Cloud/impit-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xcrap-Cloud/impit-client/issues"
+  },
+  "homepage": "https://github.com/Xcrap-Cloud/impit-client#readme"
+}
