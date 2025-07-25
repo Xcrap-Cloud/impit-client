@@ -32,7 +32,6 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@xcrap/core": "*",
     "impit": "^0.5.3"
   },
   "repository": {
@@ -42,5 +41,8 @@
   "bugs": {
     "url": "https://github.com/Xcrap-Cloud/impit-client/issues"
   },
-  "homepage": "https://github.com/Xcrap-Cloud/impit-client#readme"
+  "homepage": "https://github.com/Xcrap-Cloud/impit-client#readme",
+  "peerDependencies": {
+    "@xcrap/core": "*"
+  }
 }
