@@ -1,6 +1,6 @@
 {
   "name": "@xcrap/impit-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Xcrap Impit Client is a package within the Xcrap framework that implements an HTTP client using the Impit library.",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
