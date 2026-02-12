@@ -1,5 +1,4 @@
 import { BaseClient, BaseClientOptions, ClientInterface, ClientFetchOptions, ClientFetchManyOptions, FaliedAttempt, HttpResponse, defaultUserAgent, InvalidStatusCodeError, delay } from "@xcrap/core"
-import { extract } from "@xcrap/parser"
 import { Impit, ImpitOptions, RequestInit } from "impit"
 
 export type ImpitProxy = string
@@ -91,7 +90,6 @@ export class ImpitClient extends BaseClient<ImpitProxy> implements ClientInterfa
         }
 
         return attemptRequest(retries)
-
     }
 
     async fetchMany({ requests, concurrency, requestDelay }: ImpitClientFetchManyOptions): Promise<HttpResponse[]> {

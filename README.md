@@ -9,10 +9,10 @@
 Installation is straightforward; just use your preferred dependency manager. Here's an example using NPM:
 
 ```cmd
-npm i @xcrap/impit-client @xcrap/core @xcrap/parser
+npm i @xcrap/impit-client @xcrap/core @xcrap/extractor
 ```
 
-> You also need to install `@xcrap/parser` and `@xcrap/core` because they are listed as `peerDependencies`. This means the package requires `@xcrap/parser` and `@xcrap/core`, but it will use the versions that the user has installed in their project.
+> You also need to install `@xcrap/extractor` and `@xcrap/core` because they are listed as `peerDependencies`. This means the package requires `@xcrap/extractor` and `@xcrap/core`, but it will use the versions that the user has installed in their project.
 
 -----
 
@@ -24,14 +24,14 @@ Like all HTTP clients, `ImpitClient` has two methods: `fetch()` to make a reques
 
 ```ts
 import { ImpitClient } from "@xcrap/impit-client"
-import { extract } from "@xcrap/parser"
+import { extract, css } from "@xcrap/extractor"
 
 ;(async () => {
     const client = new ImpitClient()
     const url = "https://example.com"
     const response = await client.fetch({ url: url })
     const parser = response.asHtmlParser()
-    const pageTitle = await parser.parseFist({ query: "title", extractor: extract("innerText") })
+    const pageTitle = await parser.extractValue({ query: css("title"), extractor: extract("innerText") })
 
     console.log("Page Title:", pageTitle)
 })();
